@@ -29,8 +29,23 @@
       "relation": "oneToMany",
       "target": "api::section.section"
     },
+    "slug": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
     "cover": {
-      "type": "string",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
